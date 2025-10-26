@@ -16,6 +16,10 @@ html {
   background-color: #1b1919;
   inline-size: 1200px;
   block-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
 }
 
 h1,
@@ -60,11 +64,6 @@ ol {
   white-space: nowrap;
 }
 
-.page {
-  display: flex;
-  padding: 133px 30px;
-}
-
 /* БЛОК С ОСНОВНЫМ КОНТЕНТОМ */
 .content {
   display: grid;
@@ -72,7 +71,7 @@ ol {
   align-content: center;
   gap: 30px;
   width: 100%;
-  height: 535px;
+  padding: 0 30px;
 }
 
 /* РЕЗУЛЬТАТ */
@@ -83,7 +82,7 @@ ol {
 .result__video-container {
   position: relative;
   width: 100%;
-  min-height: 385px;
+  height: 385px;
   margin-bottom: 16px;
 }
 
@@ -124,7 +123,6 @@ ol {
 
 .search-form__label {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 5px;
   width: fit-content;
@@ -143,7 +141,7 @@ ol {
   font-size: 18px;
   font-style: normal;
   line-height: 22px;
-  background-color: #1b1919;
+  background-color: transparent;
   appearance: none;
 }
 
@@ -339,7 +337,7 @@ ol {
 .content__video-card-description {
   display: -webkit-box;
   overflow: hidden;
-  line-height: 16.2px;
+  line-height: .9em; 
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   line-clamp: 3;
